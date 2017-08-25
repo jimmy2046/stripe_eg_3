@@ -16,7 +16,13 @@
       </p>
                 
       <h2 class="warning">Website under test. Please do not buy now.</h2>
+<h3>Test card numbers and tokens</h3>
+<p>Genuine card information cannot be used in test mode. We recommend using our test tokens when testing your integration and creating charges, instead of passing card information directly to the API. <a href="https://stripe.com/docs/testing#cards">https://stripe.com/docs/testing#cards</a></p>
+
+<p>Sample test card number: 4242 4242 4242 4242 (Visa)</p>
 
 <p><%= link_to 'Testing Buy', new_charge_path(:product_id => @product.id), class: "btn btn-secondary", role: "button" %></p>
+
+      <%= link_to('List all products', products_path) %><br />
 
       <%= link_to('Go back to Home', root_path) %>
