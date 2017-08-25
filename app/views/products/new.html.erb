@@ -1,0 +1,17 @@
+<h1>Input a new product</h1>
+
+<%= form_for :product, url: products_path do |f| %>
+    <p>
+      <%= f.label :description %><br>
+      <%= f.text_field :description, size: 30 %>
+    </p>
+ 
+    <p>
+      <%= f.label :price %><br>
+      <%= f.text_field :price, size: 15 %>
+    </p>
+ 
+    <p>
+      <%= f.submit "Save Product" %>
+    </p>
+    <% end %>

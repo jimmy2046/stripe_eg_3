@@ -1,0 +1,22 @@
+<h1>Product Details</h1>
+
+      <p>
+        <strong>Product ID:</strong>
+        <%= @product.id %>
+      </p>        
+        
+      <p>
+        <strong>Description:</strong>
+        <%= @product.description %>
+      </p>
+ 
+      <p>
+        <strong>Price:</strong>
+        <%= @product.price %>
+      </p>
+                
+      <h2 class="warning">Website under test. Please do not buy now.</h2>
+
+<p><%= link_to 'Testing Buy', new_charge_path(:product_id => @product.id), class: "btn btn-secondary", role: "button" %></p>
+
+      <%= link_to('Go back to Home', root_path) %>
